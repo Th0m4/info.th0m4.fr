@@ -119,7 +119,7 @@ footer {
   padding-top: 15px;
 }
 
-footer img {
+footer .logo {
   justify-items: center;
   width: 80px;
   height: 80px;
