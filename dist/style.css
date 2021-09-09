@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root[data-theme='light'] {
+  --font-color: #092a17;
+  --background: #f3fcf7;
+  --font-color-inverted: #f3fcf7;
+  --background-inverted: #092a17;
+}
+
+:root[data-theme='dark'] {
+  --font-color: #f3fcf7;
+  --background: #092a17;
+  --font-color-inverted: #092a17;
+  --background-inverted: #f3fcf7;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background-color: var(--background);
+  font-size: 20px;
+}
+
+*,
+*::before,
+*::after,
+a:visited {
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", Helvetica, sans-serif;
+  line-height: 1.3;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  max-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: fit-content;
+}
+
+header h1 {
+  color: var(--font-color);
+  font-size: 20px;
+  padding-top: 15px;
+  font-family: "Oswald", Helvetica, sans-serif;
+}
+
+header h1::after {
+  border: 1px solid var(--background);
+  content: "";
+  display: block;
+  margin: 0 auto;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+header h1:hover:after {
+  backface-visibility: hidden;
+  border-color: var(--font-color);
+  transition: width 350ms ease-in-out;
+  width: 80%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+main a {
+  border-radius: 5px;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+main a:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+main a:hover {
+  color: var(--font-color-inverted);
+  background-color: var(--background-inverted);
+  transition: all 0.2s ease-in-out;
+}
+
+main .separator {
+  padding: 2.5px 10%;
+  border-radius: 5px;
+  margin: 5px 0 20px 0;
+  background-color: var(--background-inverted);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+footer img {
+  justify-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+footer .theme_switch {
+  justify-self: flex-end;
+  width: 40px;
+  height: 15px;
+  background-color: var(--background-inverted);
+  border-radius: 50px;
+  position: relative;
+}
+
+footer .theme_switch input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+footer .theme_switch label {
+  font-size: 21px;
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-5px, -5.5px);
+  transition: transform 0.4s;
+}
+
+footer .theme_switch input:checked ~ label {
+  transform: translate(25px, -5.5px);
+}
+/*# sourceMappingURL=style.css.map */

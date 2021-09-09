@@ -1,0 +1,28 @@
+// Fonts-size :
+$font-sm: 15px;
+$font-med: 20px;
+$font-lg: 25px;
+$font-xlg: 30px;
+
+// Colors :
+
+
+$correct-color: #00f2b8;
+$warning-color: #fe9f2f;
+$error-color: #f2330d;
+
+:root[data-theme='light'] {
+  --font-color: #092a17;
+  --background: #f3fcf7;
+
+  --font-color-inverted: #f3fcf7;
+  --background-inverted: #092a17;
+}
+
+:root[data-theme='dark'] {
+  --font-color: #f3fcf7;
+  --background: #092a17;
+
+  --font-color-inverted: #092a17;
+  --background-inverted: #f3fcf7;
+}

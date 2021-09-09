@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 15px;
+
+  img {
+    border-radius: 50%;
+    max-width: fit-content;
+  }
+
+
+  h1 {
+    color: var(--font-color);
+    font-size: $font-med;
+    padding-top: 15px;
+    font-family: "Oswald", Helvetica, sans-serif;
+
+    &::after {
+      border: 1px solid var(--background);
+      content: "";
+      display: block;
+      margin: 0 auto;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+
+    &:hover {
+      &:after {
+        backface-visibility: hidden;
+        border-color: var(--font-color);
+        transition: width 350ms ease-in-out;
+        width: 80%;
+      }
+    }
+  }
+}
