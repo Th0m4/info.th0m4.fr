@@ -115,7 +115,7 @@ main .separator {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 15px;
 }
 
@@ -123,6 +123,7 @@ footer img {
   justify-items: center;
   width: 80px;
   height: 80px;
+  margin-right: 75px;
 }
 
 footer .theme_switch {
