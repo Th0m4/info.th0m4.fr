@@ -51,6 +51,7 @@ header {
 
 header img {
   border-radius: 50%;
+  height: 150px;
   max-width: fit-content;
 }
 
@@ -108,6 +109,7 @@ main a:hover {
 main .separator {
   padding: 2.5px 10%;
   border-radius: 5px;
+  max-width: 350px;
   margin: 5px 0 20px 0;
   background-color: var(--background-inverted);
 }
